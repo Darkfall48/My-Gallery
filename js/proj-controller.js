@@ -78,7 +78,7 @@ function renderProjsModal() {
 
                     <p>${proj.desc}</p>
                     <ul class="list-inline">
-                      <li>Date: ${proj.publishedAt}</li>
+                      <li>Release Date: ${proj.publishedAt}</li>
                       <li>Category:
                         ${renderLabels(proj.labels)}
                       </li>
