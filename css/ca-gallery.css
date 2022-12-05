@@ -84,7 +84,7 @@ body {
 .offcanvas-aside {
   position: fixed;
   height: 100%;
-  background: rgba(255, 255, 255, 0.927);
+  background: rgba(250, 249, 247, 0.852);
   box-shadow: 1px 1px 20px 1px rgba(122, 119, 119, 0.607);
   width: 80vw;
   right: -80vw;
@@ -95,12 +95,14 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
 .offcanvas-aside img {
   border-radius: 50%;
 }
 .offcanvas-aside p {
   text-align: center;
 }
+
 .offcanvas-aside .offcanvas-content-suffix {
   height: 20%;
 }

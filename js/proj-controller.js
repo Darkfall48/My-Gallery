@@ -66,13 +66,16 @@ function renderProjsModal() {
                     <!-- Project Details Go Here -->
                     <h2>${proj.title}</h2>
                     <p class="item-intro text-muted">${proj.intro}</p>
-                    <img
+                    <a href="${
+                      proj.projUrl
+                    }" target="_blank" class="btn" role="button" aria-disabled="true">                    <img 
                       class="img-fluid d-block mx-auto"
                       src="https://raw.githubusercontent.com/Darkfall48/My-Gallery/main/img/portfolio/${
                         proj.url
                       }-full.jpg"
                       alt=""
-                    />
+                    /></a>
+
                     <p>${proj.desc}</p>
                     <ul class="list-inline">
                       <li>Date: ${proj.publishedAt}</li>
