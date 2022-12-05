@@ -33,7 +33,7 @@ function _createProjs() {
       ['Game Design', 'Unity', 'Game Maker']
     ),
   ]
-  console.log(gProjs)
+  console.log('Projects:', gProjs)
 }
 
 function _createProj(

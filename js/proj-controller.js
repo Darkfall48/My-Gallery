@@ -104,14 +104,29 @@ function renderProjsModal() {
 }
 
 function renderLabels(labels) {
-  console.log(labels)
   return labels.reduce((acc, label) => {
     acc += '<span class="badge bg-secondary">' + label + '</span>' + ' '
-    console.log(acc)
     return acc
   }, '')
 }
 
-function onContactForm() {
-  // ${'contact-form'}.
+function onContactFormClick() {
+  const clientMailTxt = $('.email-contact').val()
+  const subjectTxt = $('.subject-contact').val()
+  const messageTxt = $('.message-contact').val()
+
+  const myMail = 'sidney@sebban.be'
+
+  console.log(
+    'Your email:',
+    clientMailTxt,
+    '\nThe subject:',
+    subjectTxt,
+    '\nThe message:',
+    messageTxt
+  )
+
+  const mailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${myMail}&su=${subjectTxt}&body=${messageTxt}`
+
+  window.open(mailLink)
 }

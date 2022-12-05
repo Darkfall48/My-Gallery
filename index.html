@@ -53,39 +53,39 @@
       <!-- Contact -->
       <section id="contact">
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Your E-mail Address:</label
-          >
+          <label for="email" class="form-label">Your E-mail Address:</label>
           <input
             type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
+            class="email-contact form-control"
+            id="email"
             placeholder="name@example.com"
           />
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Subject</label
-          >
+          <label for="subject" class="form-label">Subject</label>
           <input
             type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
+            class="subject-contact form-control"
+            id="subject"
             placeholder="Type the subject here"
           />
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Message Body</label
-          >
+          <label for="message" class="form-label">Message Body</label>
           <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
+            class="message-contact form-control"
+            id="message"
             placeholder="Type your message here"
             rows="3"
           ></textarea>
         </div>
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button
+          onclick="onContactFormClick()"
+          type="button"
+          class="btn btn-primary"
+        >
+          Submit
+        </button>
       </section>
     </aside>
 
