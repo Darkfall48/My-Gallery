@@ -26,7 +26,7 @@ function renderProjs() {
             </div>
             <img
               class="img-fluid"
-              src="https://github.com/Darkfall48/My-Gallery/tree/main/img/portfolio/${proj.url}-thumb.jpg"
+              src="https://raw.githubusercontent.com/Darkfall48/My-Gallery/main/img/portfolio/${proj.url}-thumb.jpg"
               alt="${proj.name}"
             />
           </a>
@@ -68,7 +68,7 @@ function renderProjsModal() {
                     <p class="item-intro text-muted">${proj.intro}</p>
                     <img
                       class="img-fluid d-block mx-auto"
-                      src="https://github.com/Darkfall48/My-Gallery/tree/main/img/portfolio/${
+                      src="https://raw.githubusercontent.com/Darkfall48/My-Gallery/main/img/portfolio/${
                         proj.url
                       }-full.jpg"
                       alt=""
