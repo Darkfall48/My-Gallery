@@ -51,8 +51,7 @@ function renderProjsModal() {
         id="${proj.id}"
         tabindex="-1"
         role="dialog"
-        aria-hidden="true"
-      >
+        aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -75,7 +74,10 @@ function renderProjsModal() {
                     <p>${proj.desc}</p>
                     <ul class="list-inline">
                       <li>Date: ${proj.publishedAt}</li>
-                      <li>Category: ${proj.labels.join(', ')}</li>
+                      <li>Category:
+                        <span class="badge bg-secondary">
+                        ${proj.labels.join(', ')}</span>
+                      </li>
                     </ul>
                     <button
                       class="btn btn-primary"
