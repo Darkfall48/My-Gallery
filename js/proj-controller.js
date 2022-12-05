@@ -41,7 +41,7 @@ function renderProjs() {
   $('.proj-container').html(projsHTMLs)
 }
 
-//! KNOWN ISSUE: Badges are connected into one big badge
+//?RESOLVED: KNOWN ISSUE: Badges are connected into one big badge
 function renderProjsModal() {
   var projs = getProjs()
   var projsHTMLs = projs
@@ -76,8 +76,7 @@ function renderProjsModal() {
                     <ul class="list-inline">
                       <li>Date: ${proj.publishedAt}</li>
                       <li>Category:
-                        <span class="badge bg-secondary">
-                        ${proj.labels.join(', ')}</span>
+                        ${renderLabels(proj.labels)}
                       </li>
                     </ul>
                     <a href="${
@@ -104,7 +103,15 @@ function renderProjsModal() {
   $('.proj-modal-container').html(projsHTMLs)
 }
 
+function renderLabels(labels) {
+  console.log(labels)
+  return labels.reduce((acc, label) => {
+    acc += '<span class="badge bg-secondary">' + label + '</span>' + ' '
+    console.log(acc)
+    return acc
+  }, '')
+}
 
-function onContactForm(){
-    ${'contact-form'}.
+function onContactForm() {
+  // ${'contact-form'}.
 }
