@@ -18,6 +18,7 @@ function _createProjs() {
       'Video Editing like a pro',
       'I can make any videos',
       'video',
+      'https://darkfall48.github.io/Sprint-1-Mine-Sweeper/',
       2012,
       ['Media', 'YouTube', 'FX', 'Adobe Premiere Pro', 'Camtasia']
     ),
@@ -27,6 +28,7 @@ function _createProjs() {
       'Game Design like a pro',
       'I can make any games',
       'games',
+      'Proj Url',
       84841548,
       ['Game Design', 'Unity', 'Game Maker']
     ),
@@ -34,7 +36,16 @@ function _createProjs() {
   console.log(gProjs)
 }
 
-function _createProj(name, title, intro, desc, url, timeInStamp, labels) {
+function _createProj(
+  name,
+  title,
+  intro,
+  desc,
+  url,
+  projUrl,
+  timeInStamp,
+  labels
+) {
   return {
     id: name,
     name,
@@ -42,6 +53,7 @@ function _createProj(name, title, intro, desc, url, timeInStamp, labels) {
     intro,
     desc,
     url,
+    projUrl,
     publishedAt: timeInStamp,
     labels,
   }

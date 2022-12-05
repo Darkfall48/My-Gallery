@@ -41,6 +41,7 @@ function renderProjs() {
   $('.proj-container').html(projsHTMLs)
 }
 
+//! KNOWN ISSUE: Badges are connected into one big badge
 function renderProjsModal() {
   var projs = getProjs()
   var projsHTMLs = projs
@@ -79,6 +80,9 @@ function renderProjsModal() {
                         ${proj.labels.join(', ')}</span>
                       </li>
                     </ul>
+                    <a href="${
+                      proj.projUrl
+                    }" target="_blank" class="btn btn-info" role="button" aria-disabled="true">Check It Out</a>
                     <button
                       class="btn btn-primary"
                       data-dismiss="modal"
