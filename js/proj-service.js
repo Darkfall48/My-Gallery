@@ -26,7 +26,7 @@ function _createProjs() {
       'lucky',
       'Lucky Star Shooter',
       'Project Done',
-      'I can make any videos',
+      'The following is an Electronic Game Project I did for my school. I made this project in two weeks, I worked on it in solo (my grandfather helped me to prepare physically the project).      ',
       'lucky',
       'https://github.com/Darkfall48/Lucky-Star-Shooter',
       2012,
@@ -43,24 +43,24 @@ function _createProjs() {
       ['Hackatown', 'PolyHacks', 'Montreal', 'Web', 'Parking']
     ),
     _createProj(
-      'Video',
-      'Video Editing',
-      'Video Editing like a pro',
+      'unity',
+      'My Unity Games Projects',
+      'Projects Done',
       'I can make any videos',
-      'video',
-      'https://darkfall48.github.io/Sprint-1-Mine-Sweeper/',
+      'unity',
+      'https://play.unity.com/u/Darkfall48',
       2012,
-      ['Media', 'YouTube', 'FX', 'Adobe Premiere Pro', 'Camtasia']
+      ['Video Game', 'Unity', 'Animation', '3D', '2D', 'Data Persistence']
     ),
     _createProj(
-      'Video',
-      'Video Editing',
-      'Video Editing like a pro',
+      'mines',
+      'Mine Sweeper',
+      'Project Done',
       'I can make any videos',
-      'video',
+      'mines',
       'https://darkfall48.github.io/Sprint-1-Mine-Sweeper/',
       2012,
-      ['Media', 'YouTube', 'FX', 'Adobe Premiere Pro', 'Camtasia']
+      ['Coding Academy', 'Javascript', 'CSS', 'HTML']
     ),
     _createProj(
       'games',
