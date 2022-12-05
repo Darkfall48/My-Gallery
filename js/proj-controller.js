@@ -32,7 +32,7 @@ function renderProjs() {
           </a>
           <div class="portfolio-caption">
             <h4>${proj.title}</h4>
-            <p class="text-muted">${proj.desc}</p>
+            <p class="text-muted">${proj.intro}</p>
           </div>
         </div>`
     })
@@ -41,7 +41,6 @@ function renderProjs() {
   $('.proj-container').html(projsHTMLs)
 }
 
-//?RESOLVED: KNOWN ISSUE: Badges are connected into one big badge
 function renderProjsModal() {
   var projs = getProjs()
   var projsHTMLs = projs
@@ -111,20 +110,21 @@ function renderLabels(labels) {
 }
 
 function onContactFormClick() {
-  const clientMailTxt = $('.email-contact').val()
+  //*  For the moment I'm not using the client mail
+  //   const clientMailTxt = $('.email-contact').val()
   const subjectTxt = $('.subject-contact').val()
   const messageTxt = $('.message-contact').val()
 
   const myMail = 'sidney@sebban.be'
 
-  console.log(
-    'Your email:',
-    clientMailTxt,
-    '\nThe subject:',
-    subjectTxt,
-    '\nThe message:',
-    messageTxt
-  )
+  //   console.log(
+  //     'Your email:',
+  //     clientMailTxt,
+  //     '\nThe subject:',
+  //     subjectTxt,
+  //     '\nThe message:',
+  //     messageTxt
+  //   )
 
   const mailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${myMail}&su=${subjectTxt}&body=${messageTxt}`
 
