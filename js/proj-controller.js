@@ -103,3 +103,8 @@ function renderProjsModal() {
 
   $('.proj-modal-container').html(projsHTMLs)
 }
+
+
+function onContactForm(){
+    ${'contact-form'}.
+}
