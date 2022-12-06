@@ -120,7 +120,7 @@ function _createProjs() {
     ),
     _createProj(
       'youtube',
-      'My YouTube Chanel',
+      'My YouTube Channel',
       'Will always be in development:)',
       `This is the most ambitious project I had as a child.
 
