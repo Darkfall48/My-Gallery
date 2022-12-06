@@ -10,6 +10,32 @@ function getProjs() {
   return gProjs
 }
 
+function getDate(timeInStamp) {
+  var a = new Date(+timeInStamp * 1000)
+  var months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ]
+  var year = a.getFullYear()
+  var month = months[a.getMonth()]
+  var date = a.getDate()
+  //   var hour = a.getHours()
+  //   var min = a.getMinutes()
+  //   var sec = a.getSeconds()
+  var time = date + ' ' + month + ' ' + year
+  return time
+}
+
 function _createProjs() {
   gProjs = [
     _createProj(
@@ -19,7 +45,7 @@ function _createProjs() {
       'This was the first exam and big project I did during my Full Stack Developer training at Coding Academy.',
       'mines',
       'https://darkfall48.github.io/Sprint-1-Mine-Sweeper/',
-      2012,
+      1670286208,
       ['Coding Academy', 'Javascript', 'CSS', 'HTML']
     ),
     _createProj(
@@ -29,7 +55,7 @@ function _createProjs() {
       'The little crown is a game project I started a few months before finishing my military service.</br>The game has an unconventional graphic and gameplay style, it relies on the already acquired bases of the known Nintendo licenses but with a very personal addition.</br></br>The project is currently on break, it is about 50% of its final version.',
       'crown',
       '',
-      2012,
+      1581639531,
       ['Video Game', 'Unity', 'Animation', '2D', 'RPG', 'Adventure', 'Mystery']
     ),
     _createProj(
@@ -39,7 +65,7 @@ function _createProjs() {
       'Here is the list of games I was able to implement during my Junior Code Developer training in Unity Learn.',
       'unity',
       'https://play.unity.com/u/Darkfall48',
-      2012,
+      1665793131,
       ['Video Game', 'Unity', 'Animation', '3D', '2D', 'Data Persistence']
     ),
     _createProj(
@@ -65,7 +91,7 @@ function _createProjs() {
       We learned that collaboration and communication are extremely important in this kind of project, especially with such limited time. We also discovered how to use powerful APIs in an Angular project such as the Maps JavaScript API.'`,
       'parking',
       'https://devpost.com/software/my-parking',
-      2012,
+      1644711531,
       ['Hackatown', 'PolyHacks', 'Montreal', 'Web', 'Parking']
     ),
     _createProj(
@@ -89,21 +115,29 @@ function _createProjs() {
       My project was selected by my school to participate in an international competition at the Tel-Aviv University.`,
       'lucky',
       'https://github.com/Darkfall48/Lucky-Star-Shooter',
-      2012,
+      1520554731,
       ['Game', 'Electronics', 'Arduino', 'School Project']
     ),
     _createProj(
       'youtube',
       'My YouTube Chanel',
       'Will always be in development:)',
-      '',
+      `This is the most ambitious project I had as a child.
+
+      </br></br>I have been running this channel since 2013.
+      
+      </br></br>I started this channel by doing what I love the most, gaming. I was doing Lets Play and I was invited to test games before their release.
+      
+      </br></br>Afterwards, I began to make more professional videos on the channel.
+      
+      </br></br>Today the channel is in hiatus (the recent videos are in private). But, creating videos is still my passion and I plan to continue it one day.`,
       'youtube',
       'https://www.youtube.com/@Darkfall48',
-      '2013',
+      1360109931,
       ['YouTube', 'Video Making', 'Personal Videos', 'FX']
     ),
   ]
-  console.log('Projects:', gProjs)
+  //   console.log('Projects:', gProjs)
 }
 
 function _createProj(
