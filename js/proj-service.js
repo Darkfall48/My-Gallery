@@ -16,7 +16,7 @@ function _createProjs() {
       'mines',
       'Mine Sweeper',
       'Project Done',
-      'lorem',
+      'This was the first exam and big project I did during my Full Stack Developer training at Coding Academy.',
       'mines',
       'https://darkfall48.github.io/Sprint-1-Mine-Sweeper/',
       2012,
@@ -91,6 +91,16 @@ function _createProjs() {
       'https://github.com/Darkfall48/Lucky-Star-Shooter',
       2012,
       ['Game', 'Electronics', 'Arduino', 'School Project']
+    ),
+    _createProj(
+      'youtube',
+      'My YouTube Chanel',
+      'Will always be in development:)',
+      '',
+      'youtube',
+      'https://www.youtube.com/@Darkfall48',
+      '2013',
+      ['YouTube', 'Video Making', 'Personal Videos', 'FX']
     ),
   ]
   console.log('Projects:', gProjs)
